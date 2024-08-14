@@ -1,13 +1,17 @@
 package ch06.sec06;
 
 public class Car {
+static int maxSpeed;
 	String company = "현대";
 	String model = "그랜저";
 	String color = "검정";
 	boolean start;
-	int maxSpeed = 350;
+//	int maxSpeed = 350;
 	int speed;
 	
+	public static void setMaxSpeed(int value) {
+		maxSpeed = value;
+	}
 	public void setColor(String color) {
 		this.color = color;
 	}
